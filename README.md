@@ -1,7 +1,7 @@
 Example pact with go
 ====================
 
-This is a port of the example provider written in Ruby to Google Go. The Pact is copied verbatim from the ruby project.
+This is a port of the example provider written in Ruby to Google Go. The Pact is copied verbatim from the ruby project (https://github.com/uglyog/example_pact).
 
 To run the provider:
 
