@@ -1,13 +1,13 @@
 package pact
 
 import (
-	"github.com/paulbellamy/mango"
 	"encoding/json"
+	"github.com/paulbellamy/mango"
 	"strings"
 )
 
 func Producer(env mango.Env) (status mango.Status, headers mango.Headers, body mango.Body) {
-  env.Logger().Println("Got a", env.Request().Method, "request for", env.Request().RequestURI)
+	env.Logger().Println("Got a", env.Request().Method, "request for", env.Request().RequestURI)
 
 	if strings.HasPrefix(env.Request().RequestURI, "/producer.json") {
 		status = 200
@@ -26,4 +26,3 @@ func Producer(env mango.Env) (status mango.Status, headers mango.Headers, body m
 	}
 	return
 }
-
